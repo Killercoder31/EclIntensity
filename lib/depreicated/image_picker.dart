@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_typing_uninitialized_variables
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -54,9 +56,11 @@ class HomePage extends StatelessWidget {
 
 class ImageFromGalleryEx extends StatefulWidget {
   final type;
-  ImageFromGalleryEx(this.type);
+  // ignore: use_key_in_widget_constructors
+  const ImageFromGalleryEx(this.type);
 
   @override
+  // ignore: no_logic_in_create_state, unnecessary_this
   ImageFromGalleryExState createState() => ImageFromGalleryExState(this.type);
 }
 
@@ -70,7 +74,7 @@ class ImageFromGalleryExState extends State<ImageFromGalleryEx> {
   @override
   void initState() {
     super.initState();
-    imagePicker = new ImagePicker();
+    imagePicker = ImagePicker();
   }
 
   @override

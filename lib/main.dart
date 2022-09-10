@@ -1,8 +1,6 @@
-import 'package:eic_dev/crop.dart';
-import 'package:eic_dev/image.dart';
 import 'package:flutter/material.dart';
 
-import 'image_picker.dart';
+// import 'image_picker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const ImagePage(title: 'Image picker',),
-      home: Home(),
+      // home: const HomePage(),
     );
   }
 }
